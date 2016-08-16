@@ -12,9 +12,11 @@ export default class CreateScreen extends React.Component {
    super(props);
    this.state = {isHelpExpanded: false};
   }
-  onHelpPress = () => {
+
+  _onHelpPress = () => {
     this.setState({isHelpExpanded: !this.state.isHelpExpanded});
   }
+  
   render() {
     return (
       <View>

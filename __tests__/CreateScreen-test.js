@@ -14,8 +14,8 @@ describe('CreateScreen', () => {
     );
     let tree = component.toJSON();
     expect(tree).toMatchSnapshot();
-    component.getInstance().onHelpPress();
-    // Simulate button click - how?
+    // Simulate a tap
+    component.getInstance()._onHelpPress();
     tree = component.toJSON();
     expect(tree).toMatchSnapshot();
   });
