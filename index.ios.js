@@ -13,6 +13,7 @@ import {
 } from 'react-native';
 
 import Button from './Button';
+import CreateScreen from './CreateScreen';
 
 class AppWithJest2 extends Component {
   render() {
@@ -29,6 +30,7 @@ class AppWithJest2 extends Component {
           Cmd+D or shake for dev menu
         </Text>
         <Button text={'hi'} />
+        <CreateScreen />
       </View>
     );
   }

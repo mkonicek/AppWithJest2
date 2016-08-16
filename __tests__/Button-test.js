@@ -12,18 +12,4 @@ describe('Button', () => {
       <Button text={'hi'} />
     ).toJSON()).toMatchSnapshot()
   });
-
-  // Advanced - See SUILink.react-test.js
-  xit('expands help tooltip when tapped', () => {
-    const component = ReactTestRenderer.create(
-      <CreateScreen />
-    );
-    let tree = component.toJSON();
-    expect(tree).toMatchSnapshot();
-    // Simulate button click - how?
-    tree.button.onPress();
-    // re-render
-    tree = component.toJSON();
-    expect(tree).toMatchSnapshot();
-  });
 });
