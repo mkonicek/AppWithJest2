@@ -9,8 +9,10 @@ import {
   AppRegistry,
   StyleSheet,
   Text,
-  View
+  View,
 } from 'react-native';
+
+import Button from './Button';
 
 class AppWithJest2 extends Component {
   render() {
@@ -26,6 +28,7 @@ class AppWithJest2 extends Component {
           Press Cmd+R to reload,{'\n'}
           Cmd+D or shake for dev menu
         </Text>
+        <Button text={'hi'} />
       </View>
     );
   }
